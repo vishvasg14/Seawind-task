@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+        integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .carouselImages {
+            height: 750px;
+            width: 100%;
+        }
+
+        .ServiceName {
+            background-color: white;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .iframe {
+            width: auto;
+            height: 350px;
+            filter: invert(100%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <!-- navigation bar -->
+        <section class="navigationBar bg-dark " id="Webnav">
+            <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-opacity-50 px-3">
+                <div class="container-fluid p-0">
+                    <div class=" Navbar-logo  ">
+                        
+                        <a class="navbar-brand" href="#HOME"><img src="./Images/logo.png" class="h-50 w-50" alt="Logo"></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class=" collapse navbar-collapse " id="navbarNavDropdown">
+                        <ul class="navbar-nav text-white">
+                            <li class="nav-item">
+                                <a class="nav-link  " aria-current="page" href="#HOME">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#POPULERMODEL">Models</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#BECOMEAMODEL">Register As a Model</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#MODELCATEGORY">Hire As a Model</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#OURSEVICES">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ABOUTUS">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#CONTECTUS">Contect us</a>
+                            </li>
+                            <button class="btn  login-button nav-link"><i class="fa-solid fa-right-to-bracket  "></i>
+                                Login</button>
+                            <button class="btn p-1 Register-button nav-link"><i
+                                    class="fa-solid fa-pen-to-square  "></i>Register</button>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </nav>
+        </section>
+
+        <!-- Image carosoule -->
+        <section class="Imagecarosule mb-5" id="HOME">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Images/images/Full Screen/allef-vinicius-NYHvtXLNYyY-unsplash.jpg"
+                            class="d-block w-100 carouselImages img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="./Images/images/Full Screen/allef-vinicius-OEMsLzuWKQc-unsplash.jpg"
+                            class="d-block w-100 carouselImages img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="./Images/images/Full Screen/allef-vinicius-tNztBxlZSqo-unsplash.jpg"
+                            class="d-block w-100 carouselImages img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="./Images/images/Full Screen/isaac-y-takeu--rdAo4EL6uU-unsplash.jpg"
+                            class="d-block w-100 carouselImages img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="./Images/images/Full Screen/jonas-svidras-t6TvCg7Ft5E-unsplash.jpg"
+                            class="d-block w-100 carouselImages img-fluid" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Model cards section -->
+        <section class="image-grid" ID="POPULERMODEL">
+            <div class="container-fluid">
+                <div class="row my-4">
+                    <div class="AllHeadingCurlyStyle text-center ">
+                        <h2>Popular Model</h2>
+                        <div class="HeadingImage text-center  d-md-block d-lg-block ">
+                            <img src="./Images/UnderLineHeading.png" alt="UnderLineImage" class="HeadingUnderlineImg">
+                        </div>
+                    </div>
+                </div>
+                <div class="image-section" style="background-image: url('./Images/images/4k-apocalypse-dark-background-black-wallpaper-preview.jpg');background-size: cover;
+                ">
+                    <div class="container-fluid ">
+                        <div class="row ms-auto">
+
+                            <div class="col-md-2">
+                                <div class="image-container">
+                                    <img src="./Images/images/For card/alexandru-boicu-Lc79nZ8epA8-unsplash.jpg"
+                                        class="img-fluid " alt="Image 1">
+                                    <div class="image-description">
+                                        <p>Description for Image 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="image-container">
+                                    <img src="./Images/images/For card/ali-pazani-3SyAbr5MXMA-unsplash.jpg"
+                                        class="img-fluid" alt="Image 2">
+                                    <div class="image-description">
+                                        <p>Description for Image 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="image-container">
+                                    <img src="./Images/images/For card/ali-pazani-cDGaKsbgIwo-unsplash.jpg"
+                                        class="img-fluid" alt="Image 3">
+                                    <div class="image-description">
+                                        <p>Description for Image 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="image-container">
+                                    <img src="./Images/images/For card/andrey-zvyagintsev-PdcNOb4iYFs-unsplash.jpg"
+                                        class="img-fluid" alt="Image 4">
+                                    <div class="image-description">
+                                        <p>Description for Image 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="image-container">
+                                    <img src="./Images/images/For card/ayo-ogunseinde-6W4F62sN_yI-unsplash.jpg"
+                                        class="img-fluid" alt="Image 5">
+                                    <div class="image-description">
+                                        <p>Description for Image 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="image-container">
+                                    <img src="./Images/images/For card/brooke-cagle-pJqfhKUpCh8-unsplash.jpg"
+                                        class="img-fluid" alt="Image 1">
+                                    <div class="image-description">
+                                        <p>Description for Image 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="image-container">
+                                    <img src="./Images/images/For card/dei-r-2VZ9N4bYCgs-unsplash.jpg" class="img-fluid"
+                                        alt="Image 2">
+                                    <div class="image-description">
+                                        <p>Description for Image 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="image-container">
+                                    <img src="./Images/images/For card/fabian-albert-d039yYjsOnQ-unsplash.jpg"
+                                        class="img-fluid" alt="Image 3">
+                                    <div class="image-description">
+                                        <p>Description for Image 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="image-container">
+                                    <img src="./Images/images/For card/fineas-gavre-CE_1ZBQ__Ns-unsplash.jpg"
+                                        class="img-fluid" alt="Image 4">
+                                    <div class="image-description">
+                                        <p>Description for Image 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="image-container">
+                                    <img src="./Images/images/For card/finn-hackshaw-p9btBc7HdTE-unsplash.jpg"
+                                        class="img-fluid" alt="Image 5">
+                                    <div class="image-description">
+                                        <p>Description for Image 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="image-container">
+                                    <img src="./Images/images/For card/gabriel-silverio-bUwjJ-KZ280-unsplash.jpg"
+                                        class="img-fluid" alt="Image 1">
+                                    <div class="image-description">
+                                        <p>Description for Image 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="image-container">
+                                    <img src="./Images/images/For card/ivan-dodig-R21SyyJDFgc-unsplash.jpg"
+                                        class="img-fluid" alt="Image 2">
+                                    <div class="image-description">
+                                        <p>Description for Image 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="image-container">
+                                    <img src="./Images/images/For card/jimmy-fermin-bqe0J0b26RQ-unsplash.jpg"
+                                        class="img-fluid" alt="Image 3">
+                                    <div class="image-description">
+                                        <p>Description for Image 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="image-container">
+                                    <img src="./Images/images/For card/kimson-doan-HD8KlyWRYYM-unsplash.jpg"
+                                        class="img-fluid" alt="Image 4">
+                                    <div class="image-description">
+                                        <p>Description for Image 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="image-container">
+                                    <img src="./Images/images/For card/kirill-balobanov-sRPbVu7FOsw-unsplash.jpg"
+                                        class="img-fluid" alt="Image 5">
+                                    <div class="image-description">
+                                        <p>Description for Image 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-md-12 text-center">
+                        <div class="loadMoreBtn text-center">
+                            <img src="./Images/long-lines-straight-line-transparent-7-removebg-preview.png"
+                                class="full-screen-image" alt="">
+                            <button class="btn btn-danger p-2 overlay-button">Load more</button>
+                        </div>
+                    </div>
+                </div>
+
+
+        </section>
+
+
+        <!-- Become model section -->
+        <section class="BecomeModelSection my-5 bg-dark" id="BECOMEAMODEL">
+
+            <div class="container">
+
+                <div class="row p-5">
+                    <div class="BecomeModelSectionBackImg ">
+
+                    </div>
+                    <div class="AllSimpleHeading text-center">
+                        <h1 class="text-white">
+                            Become Model
+                        </h1>
+                    </div>
+                    <div class="Applybtn text-center">
+                        <button class="btn btn-danger p-2">
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Model Category -->
+        <section class="ModelCategorySection " id="MODELCATEGORY">
+            <div class="container-fluid">
+                <div class="row my-3 p">
+                    <div class="AllHeadingCurlyStyle text-center">
+                        <h2>
+                            Model Category
+                        </h2>
+                    </div>
+
+                    <div class="HeadingImage d-none d-md-block d-lg-block">
+                        <img src="./Images/UnderLineHeading.png" class="HeadingUnderlineImg" alt="Sorry">
+                    </div>
+                </div>
+
+
+                <!-- add Backgroung Image -->
+
+                <div class="row bg-secondary pt-3">
+
+                    <div class="col-md-6 mb-4 firstBox">
+                        <div class="modelOption">
+                            <div class="modelName">
+                                Female Model
+                            </div class>
+                            <div class="ModelDataBtn pb-3">
+                                <button class="btn btn-danger ExploreProfileBtn">Explore Profile</button>
+                            </div>
+                        </div>
+
+                        <div class="ModelImage1">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./Images/images (6).jpeg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="modelName">
+                            Female Model
+                        </div>
+                        <div class="ModelDataBtn">
+                            <button class="btn btn-danger ExploreProfileBtn">Explore Profile</button>
+                        </div>
+
+                        <div class="ModelImage">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./Images/images (17).jpeg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="modelName">
+                            Female Model
+                        </div>
+                        <div class="ModelDataBtn">
+                            <button class="btn btn-danger ExploreProfileBtn">Explore Profile</button>
+                        </div>
+
+
+                        <div class="ModelImage">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./Images/images (5).jpeg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="modelName">
+                            Female Model
+                        </div>
+                        <div class="ModelDataBtn">
+                            <button class="btn btn-danger ExploreProfileBtn">Explore Profile</button>
+                        </div>
+
+                        <div class="ModelImage">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./Images/images (8).jpeg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Our services  -->
+        <section class="OurServicesSection my-5" id="OURSEVICES">
+            <div class="container-fluid">
+                <div class="row m-4">
+                    <div class="AllHeadingCurlyStyle text-center">
+                        <h2>Our Services</h2>
+                    </div>
+
+                    <div class="HeadingImage d-none d-md-block d-lg-block">
+                        <img src="./Images/UnderLineHeading.png" class="HeadingUnderlineImg" alt="Sorry">
+                    </div>
+
+                </div>
+
+                <!-- Services Data -->
+
+                <div class="row p-5">
+
+
+                    <div class="col-md-12 text-center Ourservice">
+
+                        <div class="row p-5">
+                            <div class="col-md-4">
+                                <div class="ServiceItem">
+                                    <div class="ServiceName">Promotion Model</div>
+                                    <div class="ServiceName">Event management</div>
+                                    <div class="ServiceName">Photography model</div>
+                                    <div class="ServiceName">Television model</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <div class="ServiceItem">
+                                    <div class="ServiceName">Promotion Model</div>
+                                    <div class="ServiceName">Event management</div>
+                                    <div class="ServiceName">Photography model</div>
+                                    <div class="ServiceName">Television model</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="AboutUsSection my-5" id="ABOUTUS">
+            <div class="container">
+                <div class="row">
+                    <div class="AllHeadingCurlyStyle text-center text-capitalize">
+                        <h2>About Us</h2>
+                    </div>
+                    <div class="HeadingImage d-none d-md-block d-lg-block">
+                        <img src="./Images/UnderLineHeading.png" class="HeadingUnderlineImg" alt="Sorry">
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <div class="aboutUsDescription p-4">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi aspernatur minima magnam
+                            itaque suscipit ducimus. Quisquam sed quos unde distinctio repellendus impedit nam, ut iure
+                            quod totam accusantium, repellat possimus voluptatum architecto ad voluptates? Quidem rem
+                            tempore excepturi doloribus quos, blanditiis cupiditate totam debitis iste nostrum
+                            distinctio facilis quisquam sint adipisci, provident in eius quae eaque vel rerum facere.
+                            Similique accusamus sequi exercitationem incidunt.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-5 text-center">
+
+                        <div class="EducationData mb-3">
+
+                            <i class="fa-solid fa-graduation-cap fa-2xl" style="color: #df4126;"></i>
+                            Over 20years experiance
+                        </div>
+
+                        <div class="ProfesionData mb-3">
+                            <i class="fa-solid fa-user-tie fa-2xl" style="color: #0c50c6;"></i>
+                            Professional Advice
+                        </div>
+
+                        <div class="AchivementData mb-3">
+                            <i class="fa-solid fa-trophy fa-2xl" style="color: #ff570f;"></i>
+                            The best model agency in the world
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ContactUs Section -->
+        <section class="MapSection" id="CONTECTUS">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Map  -->
+                    <div class="col-md-12 ">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7439.184774010143!2d72.79232109050982!3d21.208345524164166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04c2610ac2fb3%3A0x9b4587ac1a2af204!2sTadwadi%2C%20Surat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1699082169747!5m2!1sen!2sin" width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+
+                    <div class="col-md-6 position-relative top-50">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-md-3">
+                                <div class="ContackDetails">
+                                    <div>
+                                        <i class="fa-solid fa-location-dot" style="color: #ff2c14;"></i>
+                                    </div>
+                                    <div>Address</div>
+                                    <div>---------</div>
+                                    <div>Ahmedabad</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="ContackDetails">
+                                    <div>
+                                        <i class="fa-solid fa-envelope" style="color: #ff3300;"></i>
+                                    </div>
+                                    <div>Email</div>
+                                    <div>---------</div>
+                                    <div>gmial@gmai.com</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="ContackDetails">
+                                    <div>
+                                        <i class="fa-solid fa-mobile-screen" style="color: #fe1010;"></i>
+                                    </div>
+                                    <div>Phone</div>
+                                    <div>---------</div>
+                                    <div>+91 74757574575</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="ContackDetails">
+                                    <div>
+                                        <i class="fa-solid fa-desktop" style="color: #f03919;"></i>
+                                    </div>
+                                    <div>Porfolio</div>
+                                    <div>---------</div>
+                                    <div>www.logo.com</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer section with square buttons -->
+        <section class="outer-container" >
+            <div class="additional-box" style="left: 500px;"></div>
+            <div class="additional-box" style="left: 550px;"></div>
+            <div class="additional-box" style="left: 600px;"></div>
+            <div class="logo-placement">
+                <a class="navbar-brand" href="#HOME"><img src="./Images/logo.png" class="h-50 w-50" alt="Logo"></a>
+            </div>
+            <div class="center-box">
+                <p class="copyright-text">Copyright 2022 All rights reserved</p>
+            </div>
+            <img class="inner-img" src="https://wallpapercave.com/wp/wp2739203.jpg" alt="Description of your image">
+        </section>
+        
+
+
+
+
+
+
+</html>
